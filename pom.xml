@@ -64,5 +64,24 @@
 		</plugins>
 	</build>
 
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<build.profile.id>dev</build.profile.id>
+				<profileActive>dev</profileActive>
+			</properties>
+		</profile>
+		<profile>
+			<id>docker</id>
+			<properties>
+				<build.profile.id>docker</build.profile.id>
+				<profileActive>docker</profileActive>
+			</properties>
+		</profile>
+	</profiles>
 
 </project>
